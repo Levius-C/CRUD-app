@@ -15,7 +15,7 @@ const NavBar = () => {
 
   const logout = async () => {
     await signOut(auth);
-    nav("/");
+    nav("/createpost");
   };
 
   return (
