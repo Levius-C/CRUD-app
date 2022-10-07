@@ -11,11 +11,12 @@ const NavBar = () => {
 
   const login = async () => {
     await signInWithPopup(auth, provider);
+    nav("/createpost");
   };
 
   const logout = async () => {
     await signOut(auth);
-    nav("/createpost");
+    nav("/");
   };
 
   return (
